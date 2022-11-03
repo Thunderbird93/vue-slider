@@ -2,61 +2,68 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body{
+}
+
+body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #4169e1;
     color: white;
-  }
-  
-  .main-wrapper{
+}
+
+.main-wrapper{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .container{
+}
+ 
+.container{
     position: relative;
     width: 835px;
     height: 300px;
     background-color: brown;
-  }
-  .slider{
+}
+
+.slider{
     float: left;
     width: 700px;
     height: 100%;
     background-color: white;
-  }
-  .slider img{
+}
+
+.slider img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     display: none;
-  }
-  .slider img.active{
+}
+
+.slider img.active{
     display: block;
-  }
-  .thumbs{
+}
+
+.thumbs{
     display: flex;
     flex-direction: column;
     float: left;
     width: 135px;
     height: 100%;
     background-color: black;
-  }
-  .thumbs img{
+}
+
+.thumbs img{
     width: 100%;
     height: calc(100% / 5);
     object-fit: cover;
     opacity: .5;
-  }
-  
-  .thumbs img.active{
+}
+
+.thumbs img.active{
     opacity: 1;
     border: 2px solid white;
-  }
-  .buttons{
+}
+
+.buttons{
     position: absolute;
     top: 0;
     right: 49px;
@@ -66,16 +73,18 @@
     justify-content: space-between;
     padding: 10px;
     z-index: 100;
-  }
-  .next, .prev{
+}
+
+.next, .prev{
     position: relative;
     cursor: pointer;
     width: 20px;
     height: 20px;
     background-color: rgba(255, 255, 255, .5);
     border-radius: 50%;
-  }
-  .next::after, .prev::after{
+}
+
+.next::after, .prev::after{
     position: absolute;
     content: '';
     display: block;
@@ -85,13 +94,16 @@
     border-right: 1px solid black;
     top: 5px;
     left: 4px;
-  }
-  .next{
+}
+
+.next{
     transform: rotate(-45deg);
-  }
-  .prev{
+}
+
+.prev{
     transform: rotate(135deg);
-  }
-  .next:hover, .prev:hover{
+}
+
+.next:hover, .prev:hover{
     background-color: white;
-  }
+}

@@ -16,7 +16,8 @@ createApp({
                     'img/04.jpg',
                     'img/05.jpg'
                 ]
-            }
+            },
+            activeImage: 0
         }
     }
 }).mount('#app')

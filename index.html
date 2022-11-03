@@ -21,14 +21,19 @@
                 <div class="next"></div>
                 <div class="prev"></div>
               </div>
+
+
               <div class="slider">
                <img  class="item active" 
                :src="porsche.images[activeImage]" alt="">
               </div>
+
+
               <div class="thumbs">
                 <img 
                 v-for="(image, indice) in porsche.images" 
-                :src="image" alt=""
+                :src="image"
+                @click="changeImage(indice)"
                 :class="{'active': indice === activeImage}">
               </div>
         

@@ -107,3 +107,7 @@ body{
 .next:hover, .prev:hover{
     background-color: white;
 }
+
+.pointer {
+    cursor: pointer;
+}
